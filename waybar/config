@@ -1,0 +1,62 @@
+{
+    //"layer": "top", // Waybar at top layer
+    
+    //
+ "position": "top", // Waybar position (top|bottom|left|right)
+    
+ "height": 20, // Waybar height (to be removed for auto height)
+
+    //"width": 1920, // Waybar width
+    
+    "spacing": 2, // Gaps between modules (4px)
+    // Choose the order of the modules
+
+    // Load Modules
+    
+    "modules-left": [
+	"hyprland/workspaces"
+       // "hyprland/window"
+    ],
+    "modules-center": [
+        
+    ],
+    "modules-right": [
+        "mpd", 
+        "pulseaudio", 
+        "network", 
+        //"cpu", 
+       // "memory", 
+       // "battery", 
+        "clock", 
+        "tray",
+        "custom/exit"
+    ],
+
+"pulseaudio":{
+  "format": "   {volume}%",
+  "on-click": "pavucontrol",
+  "tooltip": true
+},
+
+"network":{
+  "format": "   {ipaddr}",
+  "tooltip": true
+},
+
+"clock": {
+  "format": "   {:%H:%M}",
+  "tooltip": true,
+  "tooltip-format": "{:%A, %d %B %Y %H:%M:%S}",
+  "interval": 60
+},
+
+"custom/exit": {
+  "format": " ",
+  "tooltip": true,
+  "tooltip-format": "Cerrar sesión, reiniciar, apagar",
+  "on-click": "~/.config/waybar/scripts/wofi-power.sh",
+  "interval": 3600
+}
+
+}
+

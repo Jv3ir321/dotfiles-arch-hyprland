@@ -1,0 +1,21 @@
+window {
+  margin: 0px;
+  border: none;
+  background-color: rgba(30, 30, 30, 0.6);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#entry {
+  padding: 15px 20px;
+  margin: 4px 0;
+  border-radius: 6px;
+  background-color: transparent;
+  color: white;
+}
+
+#entry:selected {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+

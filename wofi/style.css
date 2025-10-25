@@ -1,0 +1,36 @@
+window {
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(30, 30, 30, 0.9);
+  font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+  font-size: 16px;
+}
+
+#input {
+  margin: 10px;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(60, 60, 60, 0.7);
+  color: white;
+}
+
+#entry {
+  padding: 8px 12px;
+  margin: 4px 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+}
+
+#entry:selected {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+#text {
+  margin-left: 8px;
+}
+
